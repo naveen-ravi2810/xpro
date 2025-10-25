@@ -2,6 +2,7 @@
   <div>
     <Navbar />
     <Home />
+    <BannerScroll />
     <About />
     <Supports />
     <Products />
@@ -16,4 +17,5 @@ import Home from "./views/Home.vue";
 import Supports from "./views/Supports.vue";
 import Contact from "./views/Contact.vue";
 import Products from "./views/Products.vue";
+import BannerScroll from "./views/BannerScroll.vue";
 </script>

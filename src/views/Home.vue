@@ -1,5 +1,5 @@
 <template>
-  <div class="relative flex flex-col min-h-screen">
+  <div class="relative flex flex-col">
     <!-- Hero Section -->
     <section
       class="flex flex-col items-center justify-center text-center px-4 py-12 sm:py-16 bg-gray-50"
@@ -11,29 +11,28 @@
         class="mt-4 sm:mt-6 max-w-xl sm:max-w-2xl text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed"
       >
         At <strong>X-Pro</strong>, we specialize in high-performance
-        <strong>Sunfilms</strong> and <strong>Screen Guards</strong> crafted to
-        keep your vehicles cool, stylish, and protected. Our products deliver
-        crystal-clear visibility, UV resistance, and lasting durability —
-        engineered for perfection.
+        <span class="font-semibold text-yellow-600">Sunfilms</span> and
+        <span class="font-semibold text-orange-500">Screen Guards</span>,
+        crafted to keep your vehicles cool, stylish, and protected. We also
+        offer
+        <span class="font-semibold text-yellow-600"
+          >PPF (Paint Protection Film)</span
+        >
+        to safeguard your car’s paint, and
+        <span class="font-semibold text-orange-500"
+          >Nano Ceramic Safety Glazing Films</span
+        >
+        for ultimate shine and protection. Our products deliver crystal-clear
+        visibility, UV resistance, and lasting durability — engineered for
+        perfection.
       </p>
-    </section>
 
-    <!-- Banner Section -->
-    <section class="w-full">
-      <div class="w-full relative">
-        <!-- Mobile: show full image -->
-        <img
-          src="@/assets/Banner1.png"
-          alt="X-Pro Banner"
-          class="block sm:hidden w-full h-auto object-contain"
-        />
-        <!-- Web: cinematic crop -->
-        <img
-          src="@/assets/Banner1.png"
-          alt="X-Pro Banner"
-          class="hidden sm:block w-full h-full"
-        />
-      </div>
+      <!-- Friendly Customer Message -->
+      <p class="mt-4 text-sm sm:text-base md:text-lg text-gray-700 font-medium">
+        We are a
+        <span class="text-yellow-600 font-semibold">friendly partner</span>
+        for our lovable customers, guiding you to choose the best for your car.
+      </p>
     </section>
   </div>
 </template>
