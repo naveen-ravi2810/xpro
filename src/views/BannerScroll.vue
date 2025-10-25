@@ -14,11 +14,6 @@
           :alt="product.name"
           class="w-full h-80 lg:h-96 object-cover"
         />
-        <div
-          class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/60 to-transparent text-white p-3 text-center font-semibold text-lg"
-        >
-          {{ product.name }}
-        </div>
       </div>
     </div>
 
