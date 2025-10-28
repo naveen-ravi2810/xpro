@@ -12,10 +12,27 @@
         X-Pro
       </h2>
     </div>
-    <p class="hidden sm:block text-gray-500 text-sm">SunFlim & ScreenGuard</p>
+    <div class="flex items-center gap-3">
+      <button @click="downloadBrochure" class="download-btn">
+        Download Brochure
+      </button>
+      <p class="hidden sm:block text-gray-500 text-sm">SunFlim & ScreenGuard</p>
+    </div>
   </header>
 </template>
+<script setup>
+function downloadBrochure() {
+  const pdfUrl = new URL("@/assets/Brochure.pdf", import.meta.url).href;
 
+  // Create an anchor element and trigger the download
+  const link = document.createElement("a");
+  link.href = pdfUrl;
+  link.download = "X-Pro-Brochure.pdf";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+</script>
 <style scoped>
 @media (max-width: 640px) {
   header {
@@ -34,5 +51,18 @@
   p {
     font-size: 0.85rem;
   }
+}
+.download-btn {
+  background-color: #1c151d;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.download-btn:hover {
+  background-color: #0056b3;
 }
 </style>
