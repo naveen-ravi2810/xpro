@@ -1,16 +1,16 @@
 <template>
   <header
-    class="sticky top-0 left-0 w-full bg-white/80 backdrop-blur-md z-20 flex items-center justify-between px-6 py-3 shadow-md"
+    class="sticky top-0 left-0 w-full bg-black backdrop-blur-md z-20 flex items-center justify-between px-6 py-3 shadow-md"
   >
     <div class="flex items-center space-x-3">
       <img
         src="@/assets/logo.png"
         alt="X-Pro Logo"
-        class="w-10 h-10 sm:w-12 sm:h-12 object-contain"
+        class="w-32 h-32 sm:w-28 sm:h-28 object-contain"
       />
-      <h2 class="text-xl sm:text-2xl font-bold text-gray-800 tracking-wide">
+      <!-- <h2 class="text-xl sm:text-2xl font-bold text-gray-800 tracking-wide">
         X-Pro
-      </h2>
+      </h2> -->
     </div>
     <div class="flex items-center gap-3">
       <button @click="downloadBrochure" class="download-btn">
@@ -53,8 +53,8 @@ function downloadBrochure() {
   }
 }
 .download-btn {
-  background-color: #1c151d;
-  color: white;
+  background-color: #ffffff;
+  color: rgb(2, 2, 2);
   border: none;
   padding: 10px 16px;
   border-radius: 6px;
@@ -63,6 +63,6 @@ function downloadBrochure() {
 }
 
 .download-btn:hover {
-  background-color: #0056b3;
+  background-color: #4d4e4f;
 }
 </style>
